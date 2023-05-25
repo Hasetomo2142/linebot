@@ -11,10 +11,10 @@ class MySQLConnector:
     def connect(self):
         # SSH 接続
         self.server = sshtunnel.SSHTunnelForwarder(
-            ("sv14417.xserver.jp", 10022), 
-            ssh_username="xs443757", 
-            ssh_private_key_password="TomoTomo0420", 
-            ssh_pkey="xs443757.key", 
+            ("*********", 10022), 
+            ssh_username="*********", 
+            ssh_private_key_password="*********", 
+            ssh_pkey="*********", 
             remote_bind_address=("127.0.0.1", 3306)
         )
 
@@ -28,9 +28,9 @@ class MySQLConnector:
         self.cnx = mysql.connector.connect(
             host="127.0.0.1", 
             port=self.server.local_bind_port, 
-            user="xs443757_root", 
-            password="TomoTomo0420",  # パスワードの修正
-            database="xs443757_test", 
+            user="*********", 
+            password="*********",  # パスワードの修正
+            database="*********", 
             charset="utf8",
             use_pure=True
         )

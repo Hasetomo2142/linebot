@@ -17,9 +17,9 @@ from register_graph import Register
 app = Flask(__name__)
 
 # LINE Developersのチャネル基本情報ページで設定したアクセストークンとシークレットを入力
-line_bot_api = LineBotApi('i/vmdFKh0Y4WXmoW4Yvi6hgrn9O9EW0EUeSJLwSqJCUCLnFIgoqkc/SJN05Wa5nxUHsysXfAfDTpMsv6tE1oDlGq4L9UIbxOMddyree+2eIYG357FQ/iaHp8OEtrnz/ZzGgfZTJLoIK6L+dAHwCgDwdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('*********')
 # LINE Developersのチャネル基本情報ページで設定したWebhookのURLを入力
-handler = WebhookHandler('fff74914e5c86202a53e4adc858739b6')
+handler = WebhookHandler('*********')
 
 # LINE Messaging APIからのWebhookリクエストを受け取るエンドポイントを定義する
 @app.route("/callback", methods=['POST'])

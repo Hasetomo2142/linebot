@@ -51,38 +51,7 @@ class Register:
         self.graph = G
         self.input = event.message.text
 
-        # import networkx as nx
-        # import matplotlib.pyplot as plt
-
-        # def create_flowchart(graph):
-        #     pos = nx.spring_layout(G, seed=42)  # グラフをレイアウトする
-
-        #     # ノードの深さを計算する
-        #     depths = nx.shortest_path_length(graph, 'Beginning')
-
-        #     # ノードの深さごとに位置を調整する
-        #     for node, depth in depths.items():
-        #         pos[node][1] = -depth  # y座標を深さの負数に設定
-
-        #     # グラフを描画する
-        #     nx.draw(G, pos, with_labels=True, node_size=500, node_color='lightblue', edge_color='gray', arrowsize=15)
-
-        #     # グラフを表示する
-        #     plt.show()
-
-        # # create_flowchartメソッドを実行してフローチャートを描画する
-        # create_flowchart(G)
-
-
-
-        # # 有向グラフを描画
-        # pos = nx.spring_layout(G)  # ノードの配置を決定
-        # nx.draw_networkx(G, pos, with_labels=True, arrows=True)
-
-        # # プロットのカスタマイズ
-        # plt.title("s")
-        # plt.axis("off")  # 軸を表示しない
-        # plt.show()
+ 
 
         # データベースに接続
         self.my_sql_connector = MySQLConnector()
